@@ -1,52 +1,37 @@
-import { navbar } from "vuepress-theme-hope";
+import { navbar } from 'vuepress-theme-hope'
 
 export const enNavbar = navbar([
-  "/",
-  { text: "Demo", icon: "discover", link: "/demo/" },
+  '/',
+  { text: '技术方案', icon: 'discover', link: '/technical_proposal/' },
   {
-    text: "Posts",
-    icon: "edit",
-    prefix: "/posts/",
+    text: '技术拓展',
+    icon: 'edit',
+    prefix: '/technical_expansion/',
     children: [
       {
-        text: "Apple",
-        icon: "edit",
-        prefix: "apple/",
-        children: [
-          { text: "Apple1", icon: "edit", link: "1" },
-          { text: "Apple2", icon: "edit", link: "2" },
-          "3",
-          "4",
-        ],
-      },
-      {
-        text: "Banana",
-        icon: "edit",
-        prefix: "banana/",
-        children: [
-          {
-            text: "Banana 1",
-            icon: "edit",
-            link: "1",
-          },
-          {
-            text: "Banana 2",
-            icon: "edit",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
-      },
-      { text: "Cherry", icon: "edit", link: "cherry" },
-      { text: "Dragon Fruit", icon: "edit", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
-    ],
+        text: 'TypeScript',
+        icon: 'edit',
+        prefix: 'typescript/',
+        children: [{ text: 'Apple1', icon: 'edit', link: '1' }, '3']
+      }
+      // { text: 'Cherry', icon: 'edit', link: 'cherry' },
+      // { text: 'Dragon Fruit', icon: 'edit', link: 'dragonfruit' },
+      // 'tomato',
+      // 'strawberry'
+    ]
   },
   {
-    text: "V2 Docs",
-    icon: "note",
-    link: "https://theme-hope.vuejs.vuepress/",
-  },
-]);
+    text: '代码仓库',
+    icon: 'github',
+    children: [
+      {
+        text: 'Github',
+        link: 'https://github.com/Xilin05'
+      },
+      {
+        text: 'Gitee',
+        link: 'https://gitee.com/ling0512'
+      }
+    ]
+  }
+])
